@@ -1,0 +1,32 @@
+import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Login from "./pages/Login";
+import ProtectedRoute from "./components/ProtectedRoute";
+import PublicRoute from "./components/PublicRoute";
+import SidebarLayout from "./components/SidebarLayout";
+import SubscribersPage from "./pages/Subscribers";
+import CampaignsPage from "./pages/Campaigns";
+
+// placeholder home page
+const Home: React.FC = () => <div>Welcome, you’re logged in!</div>;
+
+const App: React.FC = () => (
+  <Routes>
+    <Route element={<PublicRoute />}>
+      <Route path="/login" element={<Login />} />
+    </Route>
+
+    <Route element={<ProtectedRoute />}>
+      <Route element={<SidebarLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/subscribers" element={<SubscribersPage />} />
+        <Route path="/campaigns" element={<CampaignsPage />} />
+      </Route>
+      {/* add more protected routes here */}
+    </Route>
+
+    <Route path="*" element={<Navigate to="/" replace />} />
+  </Routes>
+);
+
+export default App;
