@@ -12,7 +12,7 @@ const Home: React.FC = () => <div>Welcome, you’re logged in!</div>;
 
 const App: React.FC = () => (
   <Routes>
-    <Route element={<PublicRoute />}>
+    <Route element={<PublicRoute redirectTo="/subscribers" />}>
       <Route path="/login" element={<Login />} />
     </Route>
 
@@ -25,7 +25,7 @@ const App: React.FC = () => (
       {/* add more protected routes here */}
     </Route>
 
-    <Route path="*" element={<Navigate to="/" replace />} />
+    <Route path="*" element={<Navigate to="/subscribers" replace />} />
   </Routes>
 );
 

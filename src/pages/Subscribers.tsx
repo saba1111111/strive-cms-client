@@ -92,7 +92,7 @@ const SubscribersPage: React.FC = () => {
           overflowY: "auto",
           border: "1px solid #ddd",
           borderRadius: "4px",
-          maxWidth: "360px",
+          maxWidth: "400px",
         }}
       >
         <table

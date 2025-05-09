@@ -138,26 +138,62 @@ const CampaignsPage: React.FC = () => {
         >
           <thead>
             <tr>
-              <th style={{ padding: "4px", borderBottom: "1px solid #ccc" }}>
+              <th
+                style={{
+                  padding: "4px",
+                  borderBottom: "1px solid #ccc",
+                  textAlign: "start",
+                }}
+              >
                 N
               </th>
-              <th style={{ padding: "4px", borderBottom: "1px solid #ccc" }}>
+              <th
+                style={{
+                  padding: "4px",
+                  borderBottom: "1px solid #ccc",
+                  textAlign: "start",
+                }}
+              >
                 Public Title
               </th>
-              <th style={{ padding: "4px", borderBottom: "1px solid #ccc" }}>
+              <th
+                style={{
+                  padding: "4px",
+                  borderBottom: "1px solid #ccc",
+                  textAlign: "start",
+                }}
+              >
                 Public Message
               </th>
-              <th style={{ padding: "4px", borderBottom: "1px solid #ccc" }}>
+              <th
+                style={{
+                  padding: "4px",
+                  borderBottom: "1px solid #ccc",
+                  textAlign: "start",
+                }}
+              >
                 Start At
               </th>
-              <th style={{ padding: "4px", borderBottom: "1px solid #ccc" }}>
+              <th
+                style={{
+                  padding: "4px",
+                  borderBottom: "1px solid #ccc",
+                  textAlign: "start",
+                }}
+              >
                 Admin Email
               </th>
-              <th style={{ padding: "4px", borderBottom: "1px solid #ccc" }}>
+              <th
+                style={{
+                  padding: "4px",
+                  borderBottom: "1px solid #ccc",
+                  textAlign: "start",
+                }}
+              >
                 Status
               </th>
               <th
-                style={{ padding: "4px", borderBottom: "1px solid #ccc" }}
+                style={{ padding: "4px", borderBottom: "1px solid #ccc" ,  textAlign: "start",}}
               ></th>
             </tr>
           </thead>
