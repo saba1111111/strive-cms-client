@@ -6,6 +6,7 @@ import PublicRoute from "./components/PublicRoute";
 import SidebarLayout from "./components/SidebarLayout";
 import SubscribersPage from "./pages/Subscribers";
 import CampaignsPage from "./pages/Campaigns";
+import AskModelsPage from "./pages/Llms";
 
 // placeholder home page
 const Home: React.FC = () => <div>Welcome, you’re logged in!</div>;
@@ -21,6 +22,7 @@ const App: React.FC = () => (
         <Route path="/" element={<Home />} />
         <Route path="/subscribers" element={<SubscribersPage />} />
         <Route path="/campaigns" element={<CampaignsPage />} />
+        <Route path="/llms" element={<AskModelsPage />} />
       </Route>
       {/* add more protected routes here */}
     </Route>

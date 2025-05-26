@@ -193,7 +193,11 @@ const CampaignsPage: React.FC = () => {
                 Status
               </th>
               <th
-                style={{ padding: "4px", borderBottom: "1px solid #ccc" ,  textAlign: "start",}}
+                style={{
+                  padding: "4px",
+                  borderBottom: "1px solid #ccc",
+                  textAlign: "start",
+                }}
               ></th>
             </tr>
           </thead>

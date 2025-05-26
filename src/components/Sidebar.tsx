@@ -39,6 +39,19 @@ const Sidebar: React.FC = () => (
             Campaigns
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/llms"
+            style={({ isActive }) => ({
+              display: "block",
+              padding: "0.5rem 0",
+              color: isActive ? "#007aff" : "#333",
+              textDecoration: "none",
+            })}
+          >
+            LLMS
+          </NavLink>
+        </li>
       </ul>
     </nav>
   </div>

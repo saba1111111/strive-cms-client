@@ -11,8 +11,8 @@ interface ApiHook {
 export function useApi(): ApiHook {
   const api: AxiosInstance = useMemo(() => {
     return axios.create({
-      baseURL: "https://strive-server.onrender.com",
-      withCredentials: true, //
+      baseURL: import.meta.env.VITE_API_URL,
+      withCredentials: true,
       headers: { "Content-Type": "application/json" },
     });
   }, []);
